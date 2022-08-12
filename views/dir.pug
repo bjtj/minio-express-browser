@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title Minio Browser - #{bucket}/#{prefix}
+    style
+      include style.css
+  body
+    h1 Minio Browser
+
+    if !parent
+      p
+        a(href="/") Parent
+        span  (Bucket List)
+    else
+      p
+        a(href="/" + bucket + "/" + parent) Parent
+        
+
+    h2 #{bucket}/#{prefix}
+
+    if prefix == list[0].name
+      span Download
+    else
+      ul
+        each item in list
+          li
+            if item.prefix
+              a(href="/" + bucket + "/" + item.prefix) #{item.prefix}
+            else if item.name
+              a(href="/" + bucket + "/" + item.name) #{item.name}
+              span (FILE)

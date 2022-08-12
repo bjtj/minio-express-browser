@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Minio Browser
+    style
+      include style.css
+  body
+    h1 Minio Browser
+
+    div
+      h2 MINIO Connection
+      ul
+        li #{endpoint}:#{port}
+
+    h2 Buckets
+    ul
+      each item in buckets
+        li
+          a(href="/" + item.name) #{item.name}

@@ -1,0 +1,29 @@
+{
+  "name": "minio-express-browser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjtj/minio-express-browser.git"
+  },
+  "keywords": [],
+  "author": "TJ <bjtj10@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bjtj/minio-express-browser/issues"
+  },
+  "homepage": "https://github.com/bjtj/minio-express-browser#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "minio": "^7.0.30",
+    "nodemon": "^2.0.19",
+    "pug": "^3.0.2"
+  }
+}
